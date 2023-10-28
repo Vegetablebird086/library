@@ -1,5 +1,5 @@
 
-{"dbName":"","tableName":"bms_book_category_relation","tableComment":"书籍分类关系表","mockNum":50,"fieldList":[{"fieldName":"book_id","comment":"","fieldType":"bigint","mockType":"规则","mockParams":"([1-2]|\\d|20)","notNull":true,"primaryKey":false,"autoIncrement":false},{"fieldName":"category_id","comment":"","fieldType":"bigint","mockType":"规则","mockParams":"([1-2]|\\d|20)","notNull":true,"primaryKey":false,"autoIncrement":false}]}
+# {"dbName":"","tableName":"bms_book_category_relation","tableComment":"书籍分类关系表","mockNum":50,"fieldList":[{"fieldName":"book_id","comment":"","fieldType":"bigint","mockType":"规则","mockParams":"([1-2]|\\d|20)","notNull":true,"primaryKey":false,"autoIncrement":false},{"fieldName":"category_id","comment":"","fieldType":"bigint","mockType":"规则","mockParams":"([1-2]|\\d|20)","notNull":true,"primaryKey":false,"autoIncrement":false}]}
 
 
 -- 书籍分类关系表

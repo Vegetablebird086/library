@@ -3,7 +3,8 @@ create table if not exists `ums_role`
 (
 `id` bigint not null auto_increment comment '角色id' primary key,
 `name` varchar(32) not null comment '角色名',
-`role_key` varchar(32) not null comment '角色关键字'
+`role_key` varchar(32) not null comment '角色关键字',
+`status` char(2) not null comment '角色状态'
 ) comment '角色表';
 
 insert into `ums_role` (`id`, `name`, `role_key`, `status`) values (1, '6', '吴修杰', 0);

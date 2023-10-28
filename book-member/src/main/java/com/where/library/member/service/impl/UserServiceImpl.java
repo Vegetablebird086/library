@@ -319,4 +319,9 @@ public class UserServiceImpl extends ServiceImpl<UserDao, UserEntity> implements
             return R.error("密码错误");
         }
     }
+
+    public static void main(String[] args) {
+        String password = new BCryptPasswordEncoder().encode("123456");
+        System.out.println("password:"+password);
+    }
 }

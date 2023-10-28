@@ -26,12 +26,12 @@ public class UserTokenInterceptor implements HandlerInterceptor {
     public static ThreadLocal<Long> threadLocalUserId = new ThreadLocal<>();
 
     List<String> whitePath = new ArrayList<>();
-//    {
-//        whitePath.add("/member/user/login");
-//        whitePath.add("/member/user/register");
-//        whitePath.add("/member/user/check/username");
-//        whitePath.add("/member/user/check/phone");
-//    }
+    {
+        whitePath.add("/member/user/login");
+        whitePath.add("/member/user/register");
+        whitePath.add("/member/user/check/username");
+        whitePath.add("/member/user/check/phone");
+    }
     /**
      *
      获取session中的token，解析userId，

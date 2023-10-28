@@ -51,8 +51,8 @@ public class DateUtils {
         System.out.println(date1.toString());
         // 2022-12-11 10:21:45.616
         Timestamp timestamp = new Timestamp(Long.valueOf(l));
-        com.sun.jmx.snmp.Timestamp timestamp1 = new com.sun.jmx.snmp.Timestamp(Long.valueOf(l));
-        System.out.println(timestamp);
-        System.out.println(timestamp1);
+//        com.sun.jmx.snmp.Timestamp timestamp1 = new com.sun.jmx.snmp.Timestamp(Long.valueOf(l));
+//        System.out.println(timestamp);
+//        System.out.println(timestamp1);
     }
 }

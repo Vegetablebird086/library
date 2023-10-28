@@ -55,6 +55,7 @@ public class UserEntity implements Serializable {
 	/**
 	 * 班级
 	 */
+	@TableField(exist = false)
 	private Integer classNumber;
 	/**
 	 * 性别
