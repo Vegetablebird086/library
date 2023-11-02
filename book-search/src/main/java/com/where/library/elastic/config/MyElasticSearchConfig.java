@@ -22,7 +22,7 @@ public class MyElasticSearchConfig extends AbstractElasticsearchConfiguration {
 
     @Override
     public RestHighLevelClient elasticsearchClient() {
-        RestClientBuilder builder = RestClient.builder(HttpHost.create("192.168.0.100:9200"));
+        RestClientBuilder builder = RestClient.builder(HttpHost.create("127.0.0.1:9200"));
 //        ClientConfiguration build = ClientConfiguration.builder()
 //                .connectedTo("192.168.0.100:9200")
 //                .build();
