@@ -44,7 +44,7 @@ public class UserTokenInterceptor implements HandlerInterceptor {
     List<String> whitePath = new ArrayList<>();
     {
         whitePath.add("/member/user/login");
-//        whitePath.add("/member/user/logout");
+        whitePath.add("/member/user/logout");
         whitePath.add("/member/user/register");
         whitePath.add("/member/user/check/username");
         whitePath.add("/member/user/check/phone");
