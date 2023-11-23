@@ -21,8 +21,8 @@ import com.where.library.common.utils.R;
 /**
  * `bms_department`
  *
- * @author wherezy
- * @email wherezy@tom.com
+ * @author Jiang Wenrui
+ * @email 20722056@bjtu.edu.cn
  * @date 2022-11-28 21:25:51
  */
 @RestController

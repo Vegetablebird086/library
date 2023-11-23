@@ -287,8 +287,9 @@ public class UserServiceImpl extends ServiceImpl<UserDao, UserEntity> implements
             });
             return R.ok("信息修改成功");
         }
-        else
+        else {
             return R.error("修改失败");
+        }
     }
 
     @Override

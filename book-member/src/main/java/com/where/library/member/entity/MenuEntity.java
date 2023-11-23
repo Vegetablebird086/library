@@ -10,8 +10,8 @@ import java.io.Serializable;
 /**
  * 权限表
  * 
- * @author wherezy
- * @email wherezy@tom.com
+ * @author Jiang Wenrui
+ * @email 20722056@bjtu.edu.cn
  * @date 2022-12-08 19:43:59
  */
 @Data

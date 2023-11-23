@@ -10,8 +10,8 @@ import java.util.Map;
 /**
  * `bms_department_major_relation`
  *
- * @author wherezy
- * @email wherezy@tom.com
+ * @author Jiang Wenrui
+ * @email 20722056@bjtu.edu.cn
  * @date 2022-11-28 21:34:12
  */
 public interface DepartmentMajorRelationService extends IService<DepartmentMajorRelationEntity> {

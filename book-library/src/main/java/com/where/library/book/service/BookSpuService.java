@@ -10,8 +10,8 @@ import java.util.Map;
 /**
  * 图书标准spu表
  *
- * @author wherezy
- * @email wherezy@tom.com
+ * @author Jiang Wenrui
+ * @email 20722056@bjtu.edu.cn
  * @date 2022-11-19 22:16:54
  */
 public interface BookSpuService extends IService<BookSpuEntity> {

@@ -11,8 +11,8 @@ import java.util.Map;
 /**
  * 角色权限表
  *
- * @author wherezy
- * @email wherezy@tom.com
+ * @author Jiang Wenrui
+ * @email 20722056@bjtu.edu.cn
  * @date 2022-11-27 14:47:14
  */
 public interface RoleMenuRelationService extends IService<RoleMenuRelationEntity> {

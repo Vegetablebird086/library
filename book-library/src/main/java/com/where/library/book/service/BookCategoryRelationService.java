@@ -9,8 +9,8 @@ import java.util.Map;
 /**
  * 书籍分类关系表
  *
- * @author wherezy
- * @email wherezy@tom.com
+ * @author Jiang Wenrui
+ * @email 20722056@bjtu.edu.cn
  * @date 2022-11-19 22:16:54
  */
 public interface BookCategoryRelationService extends IService<BookCategoryRelationEntity> {

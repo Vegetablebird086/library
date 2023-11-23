@@ -10,8 +10,8 @@ import java.util.Map;
 /**
  * 用户书籍收藏表
  *
- * @author wherezy
- * @email wherezy@tom.com
+ * @author Jiang Wenrui
+ * @email 20722056@bjtu.edu.cn
  * @date 2022-11-28 17:18:42
  */
 public interface UserCollectionService extends IService<UserCollectionEntity> {
