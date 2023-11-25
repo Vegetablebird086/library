@@ -7,19 +7,30 @@ library
 ├── book-auth-security -- based on Spring Security Oauth2 for user authorization
 ├── book-gateway -- the service based on the Spring Cloud Gateway (also the project gateway)
 ├── book-search -- the search service based on the Elasticsearch
-├── book-test -- 微服务远程调用测试服务
+├── book-test -- Microservices Remote Invocation Testing Service
 ├── img -- the image folder for readme markdown file.
 ├── document -- some resources for the service. (e.g. sql source code) (nginx configuration)
 └── book-member --User Management Center.
 
 ```
+![architecture.png](img%2Farchitecture.png)
+
+
+
+
+# External libraries
+See  pom.xml file
+https://mvnrepository.com/
+
+
+
+
 
 # How to start
 ## 1. Database -- mysql
 First, you should establish a mysql server in your computer.
 
 
-外部库的链接，谁还用这么落后 技术啊，都是pom.xml从中央仓库直接下载了
 
 
 
@@ -999,7 +1010,7 @@ SET FOREIGN_KEY_CHECKS = 1;
 ```
 
 
-本机数据库使用navicat软件进行连接，也可以是用IDEA自带的database进行连接
+Connecting to the local database can be achieved either through Navicat software or by utilizing the built-in database connection feature in IntelliJ IDEA.
 
 localhost:3306
 
@@ -1007,6 +1018,116 @@ user: root
 
 password: 1234
 
-数据库默认开机自启，只需软件进行连接
+The database is set to start automatically on boot, and connection can be established simply by launching the software.
 
-本项目的数据库名是homework
+The database name for this project is "homework".
+
+## 2. Nacos
+The project requires Nacos for startup.
+
+```text 
+D:\Nacos\bin
+```
+Open the file explorer and locate it at the specified location.
+```text
+startup.cmd
+```
+Double-click to initiate the launch.
+
+Keep the command prompt (cmd) open.
+
+The Nacos console runs on port 8848, with both the username and password set to 'nacos'.
+
+## 3. Redis
+```text 
+D:\Redis\Redis-x64-3.0.504
+```
+Open the file explorer and navigate to the specified location.
+```text
+redis-server.exe
+```
+Double-click to start. 
+
+Keep the command prompt (cmd) open. 
+
+The port is 6379.
+
+## 4. Nginx
+
+```text
+D:\Nginx\nginx-1.18.0
+```
+Open the file explorer and locate it at the specified location.
+```text
+nginx.exe
+```
+Double-click to initiate the launch.
+
+After a brief flash, you should see a blank page when accessing localhost:80, indicating that Nginx is responding as expected.
+
+## 5. Elastic Search
+```text
+D:\elasticsearch-7.10.0\bin
+```
+Open the file explorer and navigate to the specified location.
+```text
+elasticsearch.bat
+```
+Double-click to start. 
+
+Keep the command prompt (cmd) open.
+## 6. Kibana（Elasticsearch's graphical user interface.）
+
+```text
+D:\kibana-7.10.0-windows-x86_64\bin
+```
+Open the file explorer and navigate to the specified location.
+```text
+kibana.bat
+```
+Double-click to start. 
+
+Keep the command prompt (cmd) open.
+## 7. Hosts configuration.
+Since the frontend is using a domain name, it is necessary to configure the mapping between the domain name and IP in the hosts file on the local machine. The hosts file is typically located below:
+```text
+C:\Windows\System32\drivers\etc
+```
+
+```text
+127.0.0.1 library.com
+127.0.0.1 book.library.com
+127.0.0.1 auth.library.com
+127.0.0.1 search.library.com
+```
+
+I have added this to my own hosts file, mapping the local machine to the domain name.
+
+The method for modifying the hosts file.
+
+Open Command Prompt with administrator privileges, navigate to this directory, and enter the command.
+```text
+start hosts notepad.exe
+```
+
+This way, you can open it with Notepad and have editing permissions.
+
+
+
+
+# Others
+
+
+JDK Version Issue!!!
+
+Library application compiled with Java 1.8
+Member application compiled with Java 1.8
+When using a higher version.
+![img.png](img%2Fimg.png)
+The error occurs in the part related to this token.
+src/main/java/com/where/library/book/interceptor/UserTokenInterceptor.java
+This file is within the library application project. 
+It is recommended to compile this microservice using Java 8.
+
+!!!!!
+Note: The auth application is compiled using Java 19.
