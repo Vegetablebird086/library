@@ -1,4 +1,5 @@
 # 项目架构
+
 ```
 library
 ├── book-comment -- 工具类及通用代码模块
@@ -9,7 +10,9 @@ library
 ├── book-test -- 微服务远程调用测试服务
 └── book-member -- 用户管理服务中心
 ```
+
 # 项目介绍
+
 ```
 利用spring security + Oauth2协议实现权限验证和鉴定  在spring Boot+Vue2框架基础上实现前后端分离   
 nginx + spring gateway网关实现反向代理机制  spring session+redis（分布式session存储）实现单点登录功能    
@@ -35,9 +38,11 @@ threaPool + Completable:线程池 + 异步调用
 ```
 
 # 项目架构图片
+
 ![img.png](img.png)
 
 # 项目搭建
+
 ```
 switchHost配置library.com 映射 127.0.0.1（本地ip）路径，实现域名访问
 192.168.0.6 library.com
@@ -48,22 +53,23 @@ switchHost配置library.com 映射 127.0.0.1（本地ip）路径，实现域名�
 ```
 
 # 项目技术
-| 技术                   | 说明                | 官网                                             |
-| ---------------------- | ------------------- | ------------------------------------------------ |
-| Spring Cloud           | 微服务框架          | https://spring.io/projects/spring-cloud          |
-| Spring Cloud Alibaba   | 微服务框架          | https://github.com/alibaba/spring-cloud-alibaba  |
-| Spring Boot            | 容器+MVC框架        | https://spring.io/projects/spring-boot           |
-| Spring Security Oauth2 | 认证和授权框架      | https://spring.io/projects/spring-security-oauth |
-| MyBatis Plus           | ORM框架             | http://www.mybatis.org/mybatis-3/zh/index.html   |
-| MyBatis Plus Generator | 数据层代码生成      | http://www.mybatis.org/generator/index.html      |
-| PageHelper             | MyBatis物理分页插件 | http://git.oschina.net/free/Mybatis_PageHelper   |
-| Elasticsearch          | 搜索引擎            | https://github.com/elastic/elasticsearch         |
-| Redis                  | 分布式缓存          | https://redis.io/                                |
-| Druid                  | 数据库连接池        | https://github.com/alibaba/druid                 |
-| JWT                    | JWT登录支持         | https://github.com/jwtk/jjwt                     |
-| Lombok                 | 简化对象封装工具    | https://github.com/rzwitserloot/lombok           |
 
-|      |
-| ---- |
+| 技术                     | 说明            | 官网                                               |
+|------------------------|---------------|--------------------------------------------------|
+| Spring Cloud           | 微服务框架         | https://spring.io/projects/spring-cloud          |
+| Spring Cloud Alibaba   | 微服务框架         | https://github.com/alibaba/spring-cloud-alibaba  |
+| Spring Boot            | 容器+MVC框架      | https://spring.io/projects/spring-boot           |
+| Spring Security Oauth2 | 认证和授权框架       | https://spring.io/projects/spring-security-oauth |
+| MyBatis Plus           | ORM框架         | http://www.mybatis.org/mybatis-3/zh/index.html   |
+| MyBatis Plus Generator | 数据层代码生成       | http://www.mybatis.org/generator/index.html      |
+| PageHelper             | MyBatis物理分页插件 | http://git.oschina.net/free/Mybatis_PageHelper   |
+| Elasticsearch          | 搜索引擎          | https://github.com/elastic/elasticsearch         |
+| Redis                  | 分布式缓存         | https://redis.io/                                |
+| Druid                  | 数据库连接池        | https://github.com/alibaba/druid                 |
+| JWT                    | JWT登录支持       | https://github.com/jwtk/jjwt                     |
+| Lombok                 | 简化对象封装工具      | https://github.com/rzwitserloot/lombok           |
+
+|     |
+|-----|
 
 
